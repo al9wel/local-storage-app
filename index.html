@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .colors{
+            background-color: #f5f5ff;
+            width: fit-content;
+            padding: 20px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .main{
+            margin: 20px auto;
+            background-color: red;
+            width: 420px;
+            height: 300px;
+            opacity: 0.5;
+        }
+        .colors div{
+            width: 80px;
+            height: 80px;
+            opacity: 0.5;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        .red{
+            background-color: red;
+        }
+        .green{
+            background-color: green;
+        }
+        .gray{
+            background-color: gray;
+        }
+        .blue{
+            background-color: blue;
+        }
+        .colors div.active{
+            opacity: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="colors" >
+        <div data-color="red" class="red " ></div>
+        <div data-color="green" class="green"></div>
+        <div data-color="gray" class="gray"></div>
+        <div data-color="blue" class="blue"></div>
+    </div>
+    <div class="main"></div>
+    <script src="main.js"></script>
+</body>
+</html>
